@@ -1,0 +1,106 @@
+body { /* Start på bodyen */
+background: linear-gradient(to left, #c33764, #474785 ); /* gradient bakgrunn*/
+font-family: 'Raleway', sans-serif; /* skrifttype */
+} /* Slutt på bodyen */
+
+h1{
+  position: absolute; /* elementet følger antributtene under */
+  left: 230px; /* 280px til venstre */
+  top: 150px; /* 150px opp*/
+  font-size: 43px; /* skriftstørrelse */
+}
+
+p{
+    position: absolute;
+    left: 232px;
+    top: 210px;
+    font-size: 24px;
+  }
+
+p.tekst{
+  position: absolute;
+  left: 232px;
+  top: 255px;
+  font-size: 20px;
+}
+
+.calculator {
+  position: absolute;
+  right: 100px;
+  top: 20px;
+  width: 350px; /* bredde */
+  margin-bottom: 15px;
+  border-radius: 7px;
+  background-color: #000000;
+  box-shadow: 5px 8px 8px -2px rgba(0, 0, 0, 0.61); /* top, høyre, under, venstre med gjennomsiktig farge (alfa)*/
+  border: 10px solid #000000;
+}
+
+.display {
+  width: 100%;
+  height: 80px;
+  border: none;
+  box-sizing: border-box; /*lar oss inkludere padding i forhold til totale bredde og høyde.*/
+  padding: 10px;
+  font-size: 23px;
+  background-color: #f8f8f8db;
+  color: #000000;
+  text-align: right; /*Justerer teksten til høyre*/
+  border-top-left-radius: 7px; /* Definerer formen på kantlinjen i øverste venstre hjørne */
+  border-top-right-radius: 7px; /* Definerer formen på kantlinjen i øverste høyre hjørne */
+}
+
+.row {
+  display: flex; /*lager en flex boks */
+  justify-content: space-between; /*lager likt mellomrom mellom randene*/
+}
+
+button {
+  width: 65px;
+  height: 49px;
+  border-radius: 24%;
+  border: none;
+  outline: none;
+  font-size: 24px;
+  background-color: #222;
+  color: #FFFFFF;
+  margin: 8px;
+}
+
+button:hover {
+  cursor: pointer; /* musen peker over knappene*/
+}
+
+.operatør {
+  background-color: #FA1093;
+  color: #000;
+}
+
+.cOperatør {
+  background-color: #FA1093;
+  color: #000;
+  border-radius: 11%;
+  width: 165px;
+}
+.FørsteRadKnapp{
+  margin-top: 16px;
+  width: 65px;
+  height: 38px;
+  background-color: #716FB9;
+  color: #000;
+}
+
+.AndreRadKnapp{
+  border-radius: 12%;
+  width: 105px;
+  height: 38px;
+  background-color: #716FB9;
+  color: #000;
+}
+
+.TredjeRadKnapp{
+  width: 65px;
+  height: 38px;
+  background-color: #716FB9;
+  color: #000;
+}
